@@ -32,9 +32,11 @@
   gap: 32px;
 }
 .nav-btn button {
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
-  padding: 12.5px 40px 12.5px 16px;
+  padding: 10px 30px 12.5px 16px;
   background: var(
     --Linear,
     linear-gradient(
@@ -47,14 +49,11 @@
   border-radius: 10000px;
   cursor: pointer;
 }
-.nav-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .arrow {
   position: relative;
-  left: -40px;
+  left: 8px;
+  top: 5px;
 }
 .hamburger-btn {
   display: none;
@@ -98,9 +97,11 @@
   font-weight: 800;
 }
 .spotify-btn button {
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
-  padding: 12px 20px 12px 48px;
+  padding: 10px 20px 12.5px 17px;
   background: var(
     --Linear,
     linear-gradient(
@@ -115,19 +116,18 @@
 }
 .spotify {
   position: relative;
-  left: 48px;
+  right: 4px;
   top: 4px;
 }
 .msg {
   position: relative;
-  left: 30px;
-  top: 4px;
+  left: -15px;
+  top: 3px;
 }
 .message-btn button {
-  margin-left: -15px;
   color: #00ff88;
   font-size: 16px;
-  padding: 12px 20px 12px 48px;
+  padding: 10px 20px 12px 30px;
   background: none;
   border-radius: 10000px;
   cursor: pointer;
@@ -137,6 +137,7 @@
   margin-top: 24px;
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 .hero-section > p {
   margin-top: 8px;
@@ -206,6 +207,61 @@
   text-align: center;
   padding-bottom: 120px;
 }
+/* choose styles */
+.why-choose-section {
+  background-color: #230e3d;
+}
+.choose-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+.choose-cards {
+  color: white;
+  padding: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  place-content: center;
+}
+.choose-cards p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.choose-cards h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0px;
+}
+.choose-cards-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.choose-cards:nth-child(1) {
+  grid-row: span 2;
+}
+.choose-cards:nth-child(2) {
+  grid-column: span 2;
+}
+.choose-cards:nth-child(3) {
+  grid-column: span 2;
+}
+.choose-cards:nth-child(4) {
+  grid-column: span 2;
+}
+.choose-cards:nth-child(5) {
+  grid-row: span 1;
+}
+.choose-container {
+  padding: 120px 200px;
+}
 
 @media screen and (max-width: 576px) {
   .hamburger-btn {
@@ -235,5 +291,22 @@
   }
   .podcast-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .choose-container {
+    padding: 95px 20px;
+  }
+  .choose-title h2 {
+    font-size: 32px;
+  }
+  .choose-cards-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .choose-cards:nth-child(1),
+  .choose-cards:nth-child(2),
+  .choose-cards:nth-child(3),
+  .choose-cards:nth-child(4),
+  .choose-cards:nth-child(5) {
+    grid-row: span 1;
+    grid-column: span 1;
   }
 }
