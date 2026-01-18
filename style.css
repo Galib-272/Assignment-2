@@ -246,6 +246,7 @@
 }
 .choose-cards:nth-child(1) {
   grid-row: span 2;
+  line-height: 30px;
 }
 .choose-cards:nth-child(2) {
   grid-column: span 2;
@@ -255,12 +256,62 @@
 }
 .choose-cards:nth-child(4) {
   grid-column: span 2;
+  line-height: 30px;
 }
 .choose-cards:nth-child(5) {
   grid-row: span 1;
+  line-height: 30px;
 }
 .choose-container {
   padding: 120px 200px;
+}
+/* featured episodes section */
+.featured-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.featured-episodes-section {
+  background-color: #1a0b2e;
+  color: white;
+  padding: 80px 150px;
+}
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  border-radius: 30px;
+}
+.featured-cards iframe {
+  width: 100%;
+}
+.featured-card1,
+.featured-card2,
+.featured-card3 {
+  background-color: #250d44;
+  border-radius: 30px;
+  overflow: hidden;
+  line-height: 35px;
+}
+.featured-watchtime img {
+  position: relative;
+  top: 6px;
+}
+.featured-content {
+  padding: 24px;
+}
+.featured-card1 {
+  background-color: #250d44;
+}
+.featured-card2 {
+  background-color: #250d44;
+}
+.featured-card3 {
+  background-color: #250d44;
+}
+.featured-watchtime {
+  display: flex;
+  gap: 8px;
 }
 
 @media screen and (max-width: 576px) {
@@ -271,7 +322,8 @@
   .nav-btn {
     display: none;
   }
-  .navbar {
+  .navbar,
+  .featured-episodes-section {
     padding: 20px;
   }
   .new-btn {
@@ -308,5 +360,15 @@
   .choose-cards:nth-child(5) {
     grid-row: span 1;
     grid-column: span 1;
+  }
+  .featured-title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .featured-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-watchtime img {
+    top: 7px;
   }
 }
