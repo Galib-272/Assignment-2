@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+/* navbar styles */
+.nav-title {
+  display: flex;
+}
+.nav-title h2 {
+  font-weight: 800;
+}
+.tech h2 {
+  color: white;
+}
+.wave h2 {
+  background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.navbar {
+  background: rgba(26, 11, 46, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 150px;
+}
+.nav-link ul{
+    display: flex;
+    gap: 32px;
+}
+.nav-btn button{
+    color: white;
+    font-size: 16px;
+    padding: 12.5px 40px 12.5px 16px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    border-radius: 10000px;
+    cursor: pointer;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    position: relative;
+    left: -40px;
+}
