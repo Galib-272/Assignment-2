@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+body p {
+  opacity: 0.7;
+}
 /* navbar styles */
 .nav-title {
   display: flex;
@@ -143,7 +146,7 @@
   margin-top: 8px;
 }
 .new-btn {
-  position: relative;
+  position: absolute;
   top: -390px;
   left: 850px;
   color: #1a0b2e;
@@ -317,6 +320,7 @@
 .host-section {
   background-color: #1a0b2e;
   color: white;
+  padding-bottom: 120px;
 }
 .host-container > h2 {
   font-size: 48px;
@@ -355,6 +359,47 @@
   max-width: 75%;
   margin: 0 auto;
 }
+/* footer styles */
+.footer-section {
+  background-image: url(./assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px 60px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-contents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-contents img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.footer-container .nav-title {
+  font-size: 48px;
+}
+.footer-container p {
+  margin-top: 20px;
+  font-size: 14px;
+}
 
 @media screen and (max-width: 576px) {
   .hamburger-btn {
@@ -369,9 +414,8 @@
     padding: 20px;
   }
   .new-btn {
-    left: 65%;
+    left: 260px;
   }
-
   .podcast-texts > h2 {
     font-size: 32px;
   }
@@ -422,5 +466,18 @@
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+  }
+  .host-container h2 {
+    font-size: 32px;
+    padding-top: 30px;
+  }
+  .host-section {
+    padding-bottom: 50px;
+  }
+  .footer-section {
+    padding: 50px 20px;
+  }
+  .footer-container .nav-title {
+    font-size: 32px;
   }
 }
