@@ -480,4 +480,8 @@ body p {
   .footer-container .nav-title {
     font-size: 32px;
   }
+  .footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
 }
