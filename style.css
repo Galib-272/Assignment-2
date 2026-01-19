@@ -82,7 +82,7 @@ body p {
 }
 .micro {
   position: absolute;
-  top: 36%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 130px;
@@ -145,18 +145,23 @@ body p {
 .hero-section > p {
   margin-top: 8px;
 }
+.circle-div {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .new-btn {
   position: absolute;
-  top: -390px;
-  left: 850px;
+  top: 140px;
+  right: -160px;
   color: #1a0b2e;
-  width: 43px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 1000px;
   padding: 8px 16px;
   background-color: #00ff88;
-  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  border-radius: 1000px;
+  box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
   animation: myanimation 10s 1s;
 }
 @keyframes myanimation {
@@ -414,7 +419,9 @@ body p {
     padding: 20px;
   }
   .new-btn {
-    left: 260px;
+    top: 170px;
+    right: -115px;
+    font-size: 14px;
   }
   .podcast-texts > h2 {
     font-size: 32px;
@@ -480,8 +487,20 @@ body p {
   .footer-container .nav-title {
     font-size: 32px;
   }
-  .footer-links{
+  .footer-links {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wave-bg {
+    object-fit: fill;
+  }
+  .circle {
+    width: 250px;
+    height: 260px;
+    top: 140px;
+  }
+  .micro {
+    width: 90px;
+    height: 140px;
   }
 }
