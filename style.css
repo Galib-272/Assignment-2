@@ -51,8 +51,11 @@ body p {
   );
   border-radius: 10000px;
   cursor: pointer;
+  border: none;
 }
-
+.nav-btn button:hover {
+  background: teal;
+}
 .arrow {
   position: relative;
   left: 8px;
@@ -117,6 +120,9 @@ body p {
   border-radius: 10000px;
   cursor: pointer;
 }
+.spotify-btn button:hover {
+  background: teal;
+}
 .spotify {
   position: relative;
   right: 4px;
@@ -128,13 +134,21 @@ body p {
   top: 3px;
 }
 .message-btn button {
-  color: #00ff88;
   font-size: 16px;
   padding: 10px 20px 12px 30px;
   background: none;
   border-radius: 10000px;
   cursor: pointer;
   border: 1px solid rgba(0, 255, 136, 1);
+}
+.message-btn button:hover {
+  background: teal;
+}
+.message-btn button a {
+  color: #00ff88;
+}
+.message-btn button:hover a {
+  color: white;
 }
 .hero-btn {
   margin-top: 24px;
